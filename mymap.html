@@ -81,8 +81,10 @@
 		rangeArray[rangeArray.length]=myTriangle;
 		rangeArray[rangeArray.length]=myLake;
 		rangeArray[rangeArray.length]=myCircle;
-		for(var i=0;i<rangeArray.length;i++) 
+		for(var i=0;i<rangeArray.length;i++){ 
 			showedRange[i]=0;
+			rangeArray[i].setMap(null);
+		}
 		
 		//myTriangle.setMap(map);
 		//myLake.setMap(map);

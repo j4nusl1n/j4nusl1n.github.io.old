@@ -38,7 +38,7 @@
 		map=new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 		
 		var triangleCoords=[
-			new google.maps.LatLng(24.788167, 120.996638), //Engineering III
+			new google.maps.LatLng(24.788167, 120.996638), //Science Building I
 			new google.maps.LatLng(24.786806, 121.001917), //Electronics and Information Research Center
 			new google.maps.LatLng(24.784712, 120.997357) //Assembly Building I
 		];
@@ -97,13 +97,15 @@
 		//myTriangle.setMap(map);
 		//myLake.setMap(map);
 	}
-	function showRange(rangeId){
+	function showRange(rangeId, alertmsg){
 		if(!showedRange[rangeId]){
 			rangeArray[rangeId].setMap(map);
 			showedRange[rangeId]=1;
+			google.maps.addDomlistener(rangeArray[rangeId], 'click', alert(alertmsg));
 		}
 		else if(showedRange[rangeId]){
 			rangeArray[rangeId].setMap(null);
+			google.maps.clearListeners(rangeArray[rangeId], 'click')
 			showedRange[rangeId]=0;
 		}
 	}
@@ -113,9 +115,11 @@
 <body>
 <div>
 	<h1>My Map</h1>
-	<button onclick='showRange(0)'>Triangle</button>
-	<button onclick='showRange(1)'>NTHU Lake</button>
-	<button onclick='showRange(2)'>NCTU Library</button>
+	<button onclick='showRange(0, 
+	"This shows the area within Science Building I, Electronics and Information Research Center and Assembly Building I.
+	")'>Triangle</button>
+	<button onclick='showRange(1, "This shows the area of the NTHU Cheng Kung Lake.")'>NTHU Lake</button>
+	<button onclick='showRange(2, "This shows the area with the radius 200 meters and the center on NCTU Library.")'>NCTU Library</button>
 </div>
 	<div id='map-canvas'></div>
 </body>

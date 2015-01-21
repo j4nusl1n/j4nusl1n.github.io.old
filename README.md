@@ -10,8 +10,8 @@ This webpage is a simple demonstration of the works I've done since last month. 
 Clicking on the different buttons will draw different areas on the map, and a alert message will inform the user about the information of the area.
 
 
-The webpage is implemented using Google Maps Javascript APIv3.
-For furthur information about Google Maps Javascript APIv3, please visit the links below:
+The webpage is implemented using **_Google Maps Javascript APIv3_**.
+For furthur information about **_Google Maps Javascript APIv3_**, please visit the links below:
   https://developers.google.com/maps/documentation/javascript/3.exp/reference
 
 

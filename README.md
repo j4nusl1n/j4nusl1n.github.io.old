@@ -33,5 +33,8 @@ By using this function, it is simple to implement my function **_showRange( rang
 
 
 ### Furthur Applications
-This map application can combine with the reporting system that we designed and implemented previously. We can deploy several beacons and classify them into different sections. When anyone sends a report using the reporting Android App., the report information will be logged and stored in the database. The other user can see this on the webpage. Furthurmore, users can see which section that this report coming from on the Google Maps, which the section range is shown by using this method. Another possible application would be that allowing the reporting system administrator to see the beacons' deployment, probably with a statistic report about the sections' reporting analysis.
+This map application can combine with the reporting system that we designed and implemented previously. We can deploy several beacons and classify them into different sections. When anyone sends a report using the reporting Android App., the report information will be logged and stored in the database. The other user can see this on the webpage. Furthurmore, users can see which section that this report coming from on the Google Maps, which the section range is shown by using this method. 
+
+
+Another possible application would be that allowing the reporting system administrator to see the beacons' deployment. It can probably attach with a statistic report about the sections' reporting analysis, reporting rate or reporting time interval for example.
 

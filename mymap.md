@@ -2,7 +2,7 @@
 * Introduction
 * Methods
 * Functions
-* Furthur Application
+* Further Application
 
 
 ### Introduction
@@ -87,7 +87,7 @@ function showRange(rangeId, alertmsg){
 ```
 
 
-### Furthur Applications
+### Further Applications
 This map application can combine with the reporting system that we designed and implemented previously. We can deploy several beacons and classify them into different sections. When anyone sends a report using the reporting Android App., the report information will be logged and stored in the database. The other user can see this on the webpage. Furthurmore, users can see which section that this report coming from on the Google Maps, which the section range is shown by using this method. 
 
 
